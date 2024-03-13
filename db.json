@@ -1,0 +1,42 @@
+{
+  "users": [
+    {
+      "id": "4373",
+      "name": "Shreyash Birajdar",
+      "email": "birajdarshreyash@gmail.com",
+      "mobile": "9421668186",
+      "designation": "HR",
+      "gender": "Male",
+      "courses": [
+        "BCA"
+      ],
+      "image": "https://avatars.githubusercontent.com/u/106108504?v=4"
+    },
+    {
+      "id": "fe74",
+      "name": "Samanue Hujare",
+      "email": "hujaresagar@gmail.com",
+      "mobile": "945215214",
+      "designation": "Manager",
+      "gender": "Male",
+      "courses": [
+        "BSC"
+      ],
+      "image": "https://avatars.githubusercontent.com/u/106108504?v=4"
+    }
+  ],
+  "usersLogin": [
+    {
+      "id": "4852",
+      "username": "shreyash",
+      "password": "454545",
+      "email": "shreyash@gmail.com"
+    },
+    {
+      "id": "71c7",
+      "username": "shreya",
+      "password": "787878",
+      "email": "shreyash@gmail.co"
+    }
+  ]
+}
