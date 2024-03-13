@@ -7,9 +7,7 @@
       "mobile": "9421668186",
       "designation": "HR",
       "gender": "Male",
-      "courses": [
-        "BCA"
-      ],
+      "courses": ["BCA"],
       "image": "https://avatars.githubusercontent.com/u/106108504?v=4"
     },
     {
@@ -19,24 +17,9 @@
       "mobile": "945215214",
       "designation": "Manager",
       "gender": "Male",
-      "courses": [
-        "BSC"
-      ],
+      "courses": ["BSC"],
       "image": "https://avatars.githubusercontent.com/u/106108504?v=4"
     }
   ],
-  "usersLogin": [
-    {
-      "id": "4852",
-      "username": "shreyash",
-      "password": "454545",
-      "email": "shreyash@gmail.com"
-    },
-    {
-      "id": "71c7",
-      "username": "shreya",
-      "password": "787878",
-      "email": "shreyash@gmail.co"
-    }
-  ]
+  "usersLogin": []
 }

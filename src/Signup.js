@@ -4,40 +4,23 @@ import "./Signup.css";
 
 const Signup = () => {
   const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
-
-  //   const handleSubmit = async (e) => {
-  //     e.preventDefault();
-  //     try {
-  //       await axios.post("http://localhost:3001/usersLogin", {
-  //         username,
-  //         password,
-  //         email,
-  //       });
-  //       alert("User signed up successfully!");
-  //       window.location.href = "/login";
-  //     } catch (error) {
-  //       console.error("Error signing up:", error);
-  //     }
-  //   };
+  const [password, setPassword] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
       console.log(email);
-      // Check if email already exists
+
       const emailCheckResponse = await axios.get(
         `http://localhost:3001/usersLogin?email=${email}`
       );
 
-      // If email exists, display error message and return
       if (emailCheckResponse.data.length > 0) {
         alert("Email already exists. Please choose a different email.");
         return;
       }
 
-      // If email doesn't exist, proceed with registration
       await axios.post("http://localhost:3001/usersLogin", {
         username,
         password,
@@ -45,7 +28,7 @@ const Signup = () => {
       });
 
       alert("User signed up successfully!");
-      // window.location.href = "/login";
+      window.location.href = "/login";
     } catch (error) {
       console.error("Error signing up:", error);
     }
@@ -64,18 +47,19 @@ const Signup = () => {
         />
         <input
           required
-          type="password"
-          placeholder="Password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
-        <input
-          required
           type="email"
           placeholder="Email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
+        <input
+          required
+          type="password"
+          placeholder="Password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+        />
+
         <button type="submit">Signup</button>
       </form>
     </div>
